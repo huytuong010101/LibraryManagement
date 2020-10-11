@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản lý thư viện</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/̉̉̉̉̉̉ku/Downloads/1498673348_bookshelf-2i0xcxy.png</normaloff>C:/Users/̉̉̉̉̉̉ku/Downloads/1498673348_bookshelf-2i0xcxy.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QGroupBox" name="col1">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="groupAction">
+         <property name="title">
+          <string>Thao tác</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btnBorrowBook">
+            <property name="text">
+             <string>Mượn sách</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btnReturnBook">
+            <property name="text">
+             <string>Trả sách</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btnListBorrowBook">
+            <property name="text">
+             <string>Xem sách đã mượn</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btnListBorrowUser">
+            <property name="text">
+             <string>Danh sách đã mượn</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupSelectedBook">
+         <property name="title">
+          <string>Sách đã chọn</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTableView" name="tableSelectedBook"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupUsers">
+         <property name="title">
+          <string>Người dùng đã chọn</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QGroupBox" name="groupSearchUser">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QGroupBox" name="groupSearchBy">
+               <property name="title">
+                <string>Tìm kiếm theo</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QRadioButton" name="radioNameSearchUser">
+                  <property name="text">
+                   <string>Tên</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioIDSearchUser">
+                  <property name="text">
+                   <string>CMND</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioPhoneSearchUser">
+                  <property name="text">
+                   <string>SĐT</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="radioIDCardSearchUser">
+                  <property name="text">
+                   <string>Mã thẻ</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupQuerySearchUser">
+               <property name="title">
+                <string>Nhập thông tin</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QLineEdit" name="inputQuerySearchUser"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="tableListUser"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="col2">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupSearchBook">
+         <property name="title">
+          <string>Tìm kiếm sách</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QGroupBox" name="groupSearchBookBy">
+            <property name="title">
+             <string>Tìm kiếm theo</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="radioNameSearchBook">
+               <property name="text">
+                <string>Tên sách</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioAuthorSearchBook">
+               <property name="text">
+                <string>Tác giả</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioIDSearchBook">
+               <property name="text">
+                <string>Mã sách</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupInputSearchBook">
+            <property name="title">
+             <string>Nhập thông tin</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLineEdit" name="inputQuerySearchBook"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableListBookSearch"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1092</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuT_i_kho_n">
+    <property name="title">
+     <string>Tài khoản</string>
+    </property>
+    <addaction name="actionSignOut"/>
+    <addaction name="ActionProfile"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuT_c_v">
+    <property name="title">
+     <string>Tác vụ</string>
+    </property>
+    <addaction name="actionBorrowBook"/>
+    <addaction name="actionInOutBook"/>
+    <addaction name="actionCreateAcc"/>
+   </widget>
+   <widget class="QMenu" name="menuQu_n_tr_vi_n">
+    <property name="title">
+     <string>Quản trị viên</string>
+    </property>
+    <addaction name="actionManageShift"/>
+    <addaction name="actionManageEmployee"/>
+    <addaction name="actionManageAccount"/>
+    <addaction name="actionManageBook"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Giới thiệu</string>
+    </property>
+   </widget>
+   <addaction name="menuT_i_kho_n"/>
+   <addaction name="menuT_c_v"/>
+   <addaction name="menuQu_n_tr_vi_n"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSignOut">
+   <property name="text">
+    <string>Đăng xuất</string>
+   </property>
+  </action>
+  <action name="ActionProfile">
+   <property name="text">
+    <string>Thông tin tài khoản</string>
+   </property>
+  </action>
+  <action name="actionBorrowBook">
+   <property name="text">
+    <string>Mượn trả sách</string>
+   </property>
+  </action>
+  <action name="actionInOutBook">
+   <property name="text">
+    <string>Nhập xuất sách</string>
+   </property>
+  </action>
+  <action name="actionQu_n_l_t_i_kho_n">
+   <property name="text">
+    <string>Quản lý tài khoản</string>
+   </property>
+  </action>
+  <action name="actionQu_n_l_nh_n_vi_n">
+   <property name="text">
+    <string>Quản lý nhân viên</string>
+   </property>
+  </action>
+  <action name="actionCreateAcc">
+   <property name="text">
+    <string>Đăng ký tài khoản</string>
+   </property>
+  </action>
+  <action name="actionManageShift">
+   <property name="text">
+    <string>Quản lý ca làm việc</string>
+   </property>
+  </action>
+  <action name="actionManageEmployee">
+   <property name="text">
+    <string>Quản lý nhân viên</string>
+   </property>
+  </action>
+  <action name="actionManageAccount">
+   <property name="text">
+    <string>Quản lý tài khoản</string>
+   </property>
+  </action>
+  <action name="actionManageBook">
+   <property name="text">
+    <string>Quản lý sách</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
